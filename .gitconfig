@@ -1,0 +1,36 @@
+[user]
+	email = aabdelre@redhat.com
+	name = Ahmed Abdalla
+	signingkey = 1FD4BD4132D93816
+#[diff]
+#    tool = kitty
+#    guitool = kitty.gui
+#[difftool]
+#    prompt = false
+#    trustExitCode = true
+#[difftool "kitty"]
+#    cmd = kitty +kitten diff $LOCAL $REMOTE
+#[difftool "kitty.gui"]
+#    cmd = kitty kitty +kitten diff $LOCAL $REMOTE
+[alias]
+	conflicts = !git --no-pager diff --name-only --diff-filter=U
+	ls = !git --no-pager log --oneline -n 10
+	lm = !git --no-pager log --oneline -n 20
+[core]
+    pager = delta
+	editor = vim
+
+[delta]
+    plus-color = "#012800"
+    minus-color = "#340001"
+    syntax-theme = Monokai Extended
+
+[interactive]
+    diffFilter = delta --color-only
+
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
