@@ -212,3 +212,5 @@ config(){
 }
 
 PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
