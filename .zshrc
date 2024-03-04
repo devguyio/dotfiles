@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export GOPATH=$HOME/Workspace/redhat
+export GOLAND_WORKSPACE=$HOME/GolandProjects
 
 export PATH="$GOPATH/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -113,15 +114,10 @@ export PATH=$PATH:$HOME/.cargo/bin
 alias kubectx="kubectl ctx"
 alias kubens="kubectl ns"
 alias k=kubectl
-alias ghkn="cd $GOPATH/src/knative.dev"
-alias ghgh="cd $GOPATH/src/github.com"
+alias ghk="cd $GOLAND_WORKSPACE/github.com/kcore-io"
+alias ghgh="cd $GOLAND_WORKSPACE/github.com"
 alias ghos="cd $GOPATH/src/github.com/openshift"
-alias ghok="cd $GOPATH/src/github.com/openshift-knative"
-alias ghst="cd $GOPATH/src/github.com/strimzi"
-alias ghkl="cd $GOPATH/src/github.com/kroxylicious/kroxylicious"
 alias ghrh="cd $GOPATH"
-alias gmk="cd $HOME/Workspace/mk"
-alias ghbb="cd $HOME/Workspace/mk/bf2"
 alias ghp="cd $HOME/Workspace/personal"
 
 alias ee="exa -l"
